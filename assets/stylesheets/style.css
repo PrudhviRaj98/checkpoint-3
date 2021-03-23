@@ -54,17 +54,25 @@ table {
 *::after {
 	box-sizing: border-box;
 }
+a{
+	text-decoration: none;
+}
 body {
     font-family: 'Poppins', sans-serif;
 }
 .flex {
 	display: flex;
+	justify-content: space-evenly;
 }
 .container {
 	margin: 0 auto;
 	width: 1300px;
 }
-header {
+.container-2 {
+	width: 90% ;
+	margin: 0 auto;
+}
+.header-1 {
 	background-color:rgb(1,45,91) ;
 	padding: 20px;
 }
@@ -75,7 +83,7 @@ header {
 .header-h1 {
 	margin-right: 60px;
 }
-.header-h1 h1,.header-h2 h2 {
+.header-h1 address,.header-h2 h2 {
 	margin-left: 10px;
 }
 .header-h2{
@@ -87,6 +95,7 @@ header {
 /* .......................................... */
 /* section-1 */
 .contact-now {
+	display: inline-block;
 	background-color: rgb(253,101,107);
 	padding: 10px 20px;
 	border-radius: 5px;
@@ -119,15 +128,15 @@ header {
 }
 .hero {
 	padding-top: 200px;
-	margin-left: 300px;
+	margin-left: 200px;
 	width: 440px;
 }
-.hero h2 {
+.hero h1 {
 	font-size: 12px;
 	color: rgb(253,126,131);
 	margin: 0 0 10px 0;
 }
-.hero h3 {
+.hero h2 {
 	font-size: 55px;
 	letter-spacing: -1px;
 	font-weight: bolder;
@@ -151,10 +160,11 @@ header {
 	background-color: rgb(246,249,254);
 	margin-bottom: 150px;
 }
-.container-2 {
+/* .container-2 {
 	margin-left: 300px;
-}
+} */
 .team {
+	
 	margin: 80px 0 0 0;
 	width: 300px;
 }
@@ -200,18 +210,31 @@ header {
 	font-weight: bold;
 }
 .padding-bottom {
+	width: 500px;
+	margin: 0 auto;
+	
+	/* border: 2px solid red; */
 	padding-bottom: 100px;
 }
 /* ......................................... */
 /* section-4 */
+.section-4-image{
+	/* position: relative; */
+}
 .section-4-image img {
 	width: 450px;
+}
+.box-section-4{
+	margin: 0 auto;
+	/* margin-left: 80px; */
+	/* border: 2px solid pink; */
 	position: relative;
+	width: 900px;
 }
 .section-4-box-2 {
 	background:linear-gradient(to right,rgba(249,249,249,0.5),rgb(255,255,255,0.5)) ;
-	top: 1600px;
-	left: 650px;
+	top: 100px;
+	left: 300px;
 	padding: 35px 0 0 30px;
 	width: 350px; 
 	position: absolute;
@@ -222,7 +245,7 @@ header {
 	margin-bottom: 15px;
 	line-height: 1.2;
 }
-.section-4-box-2 h3 {
+.section-4-box-2 p {
 	font-size: 12px;
 	margin-bottom: 20px;
 	line-height: 1.5;
@@ -234,12 +257,17 @@ header {
 /* ...................................... */
 /* .section-5 */
 .section-4-margin {
+	width: 900px;
+	/* border: 2px solid red; */
+	
+	margin: 0 auto;
 	margin-top: 150px;
+	/* margin-left: 230px; */
 }
 .h2-section-4 {
 	font-size: 45px;
 	font-weight: bold;
-	margin: 0 0 50px 300px;
+	margin: 0 0 50px 250px;
 }
 .section-5-services i {
 	font-size: 50px;
@@ -260,7 +288,7 @@ header {
 	font-size: 20px;
 	font-weight: bold;
 }
-.section-5-services h3 {
+.section-5-services p {
 	margin-left: 30px;
 	font-size: 12px;
 	color:rgb(142,153,166) ;
@@ -269,7 +297,7 @@ header {
 .more-services {
 	border-radius: 5px;
 	display: inline-block;
-	margin: 50px 0 100px 400px;
+	margin: 50px 0 100px 380px;
 	border: 2px solid rgb(253,101,107);
 	padding: 15px 30px;
 	color: rgb(253,101,107);
@@ -277,13 +305,17 @@ header {
 }
 /* .............................................. */
 /* section-6 */
-.section-6 {
+.sec-6-back {
 	background-color: rgb(248,250,254);
-	padding: 50px 0 0 0;
+}
+.section-6 {
+	margin: 0 auto;
+	padding-top: 50px;
 	margin-bottom: 100px;
-	
+	width: 1000px;	
 }
 .section-6-headings {
+
 	width: 400px;
 	margin-top: 200px;
 }
@@ -292,7 +324,7 @@ header {
 	font-weight: bold;
 	margin-bottom: 20px;
 }
-.section-6-headings h3 {
+.section-6-headings p {
 	font-size: 12px;
 	color: rgb(142,153,166);
 	margin-bottom: 40px;
@@ -308,16 +340,24 @@ header {
 }
 .case img {
 	margin-top: 70px;
-	width: 300px;
-	height: 400px;
+	width: 250px;
+	height: 300px;
+	margin-left: 40px;
 }
 .case {
-	margin: 0 0 100px 100px;
+	margin: 0 0  100px;
 }
 /* ........................................ */
 /* .section-7 */
 .section-7 {
 	width: 520px;
+	text-align: center;
+}
+.flex-2 {
+	display: flex;
+}
+.margin-testimonial{
+	/* margin-left: 150px; */
 }
 .testimonial-img img {
 	margin: 0 0 40px 700px;
@@ -326,12 +366,12 @@ header {
 	color: rgb(251,186,66);
 	margin-bottom: 20px;
 }
-.section-7 h2 {
+.section-7 p {
 	color: rgb(81,84,102);
 	font-size: 20px;
 	font-weight: 500;
 	line-height: 1.2;
-	margin: 0 auto;
+	/* margin: 0 auto; */
 	margin-bottom: 30px;
 }
 .section-7 span {
@@ -343,16 +383,16 @@ header {
 	font-size: 12px;
 	color: rgb(126,126,126);
 
-	margin-left: 140px;
+	/* margin-left: 140px; */
 }
 .section-7-margin {
-	margin: 0 auto;
+	/* margin: 0 auto; */
 }
 .nav-section-7  {
-	padding-left: 200px;
+	/* padding-left: 200px; */
 }
 .nav-section-7 i {
-	padding-left: 5px;
+	/* padding-left: 5px; */
 }
 /* ........................................... */
 /* section-8 */
@@ -381,18 +421,23 @@ header {
 	margin-bottom: 50px;
 }
 .section-8-margin {
+	width: 800px;
 	margin-top: 150px;
+}
+.section-8-margin-1{
+	width: 900px;
 }
 .recent-box h2,.recent-box h3,.recent-box h4 {
 	margin-left: 20px;
 }
-.section-8-heading {
-	margin-left: 370px;
-}
+/* .section-8-heading {
+	margin-left: 390px;
+} */
 .margin-boxes-section-8  {
 	margin-left: 50px;
 }
 /* ................................... */
+
 .background-sec-9{
 	background-color: rgb(1,45,91);
 	margin-top: 150px;
@@ -408,7 +453,7 @@ header {
 	font-weight: bold;
 	margin-left: 30px;
 }
-.request h3 {
+.request p {
 	font-size: 12px;
 	color: white;
 	line-height: 1.5;
@@ -423,6 +468,7 @@ header {
 	margin-right: 20px;
 }
 .margin-sec-9 {
+	width: 1100px;
 	padding-top: 80px;
 	padding-bottom: 80px;
 }
@@ -432,7 +478,7 @@ header {
 	border-radius: 5px;
 	color: rgb(219,225,231);
 	padding: 10px;
-	margin-right: 30px;
+	margin-right: 10px;
 	margin-top: 20px;
 }
 .send {
@@ -452,6 +498,11 @@ header {
 }
 /* .................................... */
 /* footer */
+.footer-margins{
+	/* margin: 0 auto; */
+	margin-left: 250px;
+	width: 1050px;
+}
 .background-footer {
 	background-color: rgb(248,250,254);
 	padding-bottom: 50px;
@@ -465,7 +516,7 @@ header {
 .footer-headings img{
 	margin-bottom: 30px;
 }
-.footer-headings h2 {
+.footer-headings p {
 	font-size: 12px;
 	line-height: 1.5;
 	color: rgb(136,142,154);
@@ -483,10 +534,10 @@ header {
 	color: rgb(12,56,102);
 	margin-left: 80px;
 }
-.li li{
+.li li {
 	color: rgb(136,142,154);
 	margin-left: 80px;
-	margin-bottom: 30px;
+	margin-bottom: 40px;
 }
 .small {
 	color: rgb(136,142,154);
@@ -549,7 +600,7 @@ header {
 	font-size: 30px;
 	font-weight: bold;
 }
-.about-heading h2 {
+.about-heading h1 {
 	font-size: 35px;
 	color: white;
 	margin-left: 700px;
@@ -614,7 +665,7 @@ header {
 	margin: 0 auto;
 }
 .testimonial-img img {
-	margin: 0 0 40px 700px;
+	margin: 0 0 40px 45%;
 }
 .section-7 i {
 	color: rgb(251,186,66);
@@ -639,7 +690,7 @@ header {
 
 }
 .section-7-margin {
-	margin: 0 auto;
+	/* margin: 0 auto; */
 }
 .nav-section-7  {
 	padding-left: 200px;
@@ -654,7 +705,7 @@ header {
 	background-size: 100% 100%;
 	height: 300px;
 }
-.services-heading h2 {
+.services-heading h1 {
 	font-size: 35px;
 	color: white;
 	margin-left: 600px;
@@ -668,6 +719,9 @@ header {
 	width: 300px;
 	height: 300px;
 }
+.img1{
+	position: relative;
+}
 .width-cases-abousulte , .absoulute-2 , .absoulute-3 , .absoulute-5 , .absoulute-6, .absoulute-4 {
 	padding: 10px 10px 0 20px;
 	position: absolute;
@@ -680,39 +734,38 @@ header {
 	font-size: 20px;
 	margin-bottom: 4px;
 	color: black;
+	line-height: 1.2;
 }
 .width-cases-abousulte h3 , .absoulute-2 h3 , .absoulute-3 h3 , .absoulute-4 h3 , .absoulute-5 h3 , .absoulute-6 h3 {
 	color: rgb(98,118,130);
-	font-size: 12px;
+	font-size: 10px;
+	line-height: 1.3;
 }
 .space-images-case-1 {
 	margin-top: 100px;
+	margin-bottom: 25px;
 }
 .space-images-case img {
 	margin-right: 30px;
 	margin-bottom: 30px;
 }
 .width-cases-abousulte {
-	top: 795px;
+	bottom: 30px;
 }
 .absoulute-2 {
-	left: 630px;
-	top: 795px;
+	bottom: 30px;
 }
 .absoulute-3 {
-	left: 960px;
-	top: 795px;
+	bottom: 30px;
 }
 .absoulute-4{
-	top: 1130px;
+	bottom: 30px;
 }
 .absoulute-5{
-	top: 1130px;
-	left: 630px;
+	bottom: 30px;
 }
 .absoulute-6 {
-	top: 1130px;
-	left: 960px;
+	bottom: 30px;
 }
 /* ..................................................................... */
 /* blog-page */
@@ -722,6 +775,7 @@ header {
 	flex-direction: column;
 }
 .blog{
+	position: relative;
 	width: 500px;
 	background-color: white;
 	box-shadow: 3px 3px 6px 2px rgb(241, 237, 237);
@@ -739,7 +793,7 @@ header {
 	margin-bottom: 10px;
 	margin-left: 20px;
 }
-.blog-headers h3 {
+.blog-headers p {
 	font-size: 15px;
 	color: rgb(98,118,130);
 	line-height: 1.5;
@@ -765,7 +819,8 @@ header {
 	margin-left: 10px;
 }
 .date-blog , .date-blog-2 , .date-blog-3 , .date-blog-4  {
-	left: 330px;
+	left: 30px;
+	top: 200px;
 	border-radius: 5px;
 	width: 70px;
 	height: 80px;
@@ -781,7 +836,7 @@ header {
 	margin-left: 20px;
 	color: white;
 }
-.date-blog{
+/* .date-blog{
 	top: 735px;
 }
 .date-blog-2{
@@ -792,7 +847,7 @@ header {
 }
 .date-blog-4 {
 	top: 2480px;
-}
+} */
 .margin-bottom-blog {
 	margin-bottom: 90px;
 }
@@ -963,17 +1018,16 @@ header {
 	margin-bottom: 30px;
 }
 .contact-block-1{
-	border: 2px solid black;
+	border: 2px solid rgb(142,153,166);
 	width:600px ;
 	height: 250px;
-	padding: 10px;
-	
+	padding: 10px;	
 }
 .margin-map {
 	margin-left: 30px;
 }
 .contact-block-2{
-	border: 2px solid black;
+	border: 2px solid rgb(142,153,166);
 	width: 285px;
 	height: 40px;
 	padding: 10px;
@@ -985,7 +1039,7 @@ header {
 	height: 40px;
 	padding: 10px;
 	background-color: white;
-	border: 2px solid black;
+	border: 2px solid rgb(142,153,166);
 }
 .send-contact{
 	margin-top: 30px;
@@ -993,7 +1047,6 @@ header {
 	height: 40px;
 	padding: 10px;
 	border: 3px solid rgb(253,101,107) ;
-
 }
 .send-contact span {
 	margin-left: 60px;
@@ -1002,7 +1055,6 @@ header {
 	margin-top: 100px;
 	margin-left: 100px;
 	width: 300px;
-
 }
 .icons-contact-last i{
 	color: black;
@@ -1013,7 +1065,6 @@ header {
 	margin-left: 20px;
 	font-size: 15px;
 	margin-bottom: 5px;
-
 }
 .aside-contact-1 h3 {
 	margin-left: 20px;
